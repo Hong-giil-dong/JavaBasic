@@ -1,5 +1,5 @@
 package javabasic17;
-
+//커밋확인
 import java.awt.*;
 import java.awt.event.*;
 import java.applet.Applet;
