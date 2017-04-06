@@ -1,8 +1,14 @@
 package javabasic06;
 class TvTest4 {
 	public static void main(String args[]) {
-		Tv[] tvArr = new Tv[3]; // 길이가 3인 Tv객체 배열
-
+		Tv tvArr[] = new Tv[3]; // 길이가 3인 Tv객체 배열
+		//Tv타입의 tvArr배열 참조변수를 선언하고      TV클래스로부터 '새로' 길이가 3인 객체배열를 만들어서 tVarr배열에 참조변수에 주소값을 매칭시킨다
+		
+		Tv k;
+		k = new Tv();
+		
+String i;
+i = "22";
 		// Tv객체를 생성해서 Tv객체 배열의 각 요소에 저장
 		for(int i=0; i < tvArr.length;i++) {
 			tvArr[i] = new Tv();
@@ -16,8 +22,6 @@ class TvTest4 {
 	} // main의 끝
 }
 
-
-/*
 class Tv { 
      // Tv의 속성(멤버변수) 
      String color;           // 색상 
@@ -29,4 +33,3 @@ class Tv {
      void channelUp()   {  ++channel; }  // TV의 채널을 높이는 기능을 하는 메서드 
      void channelDown() {  --channel; }  // TV의 채널을 낮추는 기능을 하는 메서드  
 }
-*/

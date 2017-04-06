@@ -5,22 +5,23 @@ class OperatorEx24 {
 		char ch = ' ';
 
 		x = 15;
-		System.out.printf("x=%2d, 10 < x && x < 20 =%b%n", x, 10 < x && x < 20);
-
-		x = 6;
-		System.out.printf("x=%2d,  x%%2==0 || x%%3==0  && x%%6!=0 =%b%n", x, x%2==0||x%3==0&&x%6!=0);
-		System.out.printf("x=%2d, (x%%2==0 || x%%3==0) && x%%6!=0 =%b%n", x,(x%2==0||x%3==0)&&x%6!=0);
+		System.out.println(10 < x && x < 20);
+		//                   만족             불만족
+ //                               만족              불만족 // false
+		x = 6; //            만족        만족        불만족
+		System.out.println(6%2==0 || 6%3==0 && 6%6!=0); // 2,3,4,8,9...
+		System.out.println((x%2==0 || x%3==0) && x%6!=0);
 
 		ch='1';
-		System.out.printf("ch='%c', '0' <= ch && ch <= '9' =%b%n", ch, '0' <= ch && ch <='9');
+		System.out.println('0' <= ch && ch <='9');
 
 		ch='a';
-		System.out.printf("ch='%c', 'a' <= ch && ch <= 'z' =%b%n", ch, 'a' <= ch && ch <='z');
+		System.out.println('a' <= ch && ch <='z');
 
 		ch='A';
-		System.out.printf("ch='%c', 'A' <= ch && ch <= 'Z' =%b%n", ch, 'A' <= ch && ch <='Z');
+		System.out.println('A' <= ch && ch <='Z');
 
 		ch='q';
-		System.out.printf("ch='%c', ch=='q' || ch=='Q' =%b%n", ch, ch=='q' || ch=='Q');
+		System.out.println(ch=='q' || ch=='Q');
 	}
 }
