@@ -14,5 +14,5 @@ class VarEx1 { //VarEx1이라는 클래스를 생성
 
 		System.out.println(year); //위에서 초기화 된 값에 밑에 새로 저장시킨 값을 넣은걸 출력 2014 
 		System.out.println(age); //위에서 초기화 된 값에 밑에 새로 저장시킨 값을 넣은걸 출력 15
-	}
-}
+	} //메인 메서드 종료
+} //클래스 종료

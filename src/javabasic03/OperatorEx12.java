@@ -7,12 +7,13 @@ class OperatorEx12 {
 
             int i = c1 + 1;       // 'a'+1 → 97+1 → 98
 
-            c3 = (char)(c1 + 1); 
-            c2++; 
-            c2++; 
+            c3 = (char)(c1 + 1); //c1의 값(a)+1 이고 char로 형변환 시켜 c3에 저장
+            c2++; //c2의 값을 후위연산자로 증가 b 
+            c2++; //한번더 증가 c
 
-            System.out.println("i=" + i); 
-            System.out.println("c2=" + c2); 
-            System.out.println("c3=" + c3); 
+            System.out.println("i=" + i); //97+1=98 
+            System.out.println("c2=" + c2);  //c
+            System.out.println("c3=" + c3); //b
+            
       } 
 } 

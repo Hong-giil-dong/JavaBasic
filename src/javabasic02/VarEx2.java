@@ -1,7 +1,7 @@
 package javabasic02; //javabasic이라는 패키지를 참조해서 만든 소스파일
 class VarEx2 {//클래스 VarEx2를 선언
 	public static void main(String[] args) { //반드시 있어야 하는 메인메소드 명령
-		int x = 10; //int형 타입으로 x라는 변수를 만들고 대입연산자로 10을 저장해서 [[초기화]]
+		int x = 10; //int형 타입으로 x라는 변수를 만들고 대입연산자로 10을 저장해서 [[초기화]] 
 		int y = 20; //int형 타입으로 y라는 변수 선언하고 20이라는 값을 대입연산자로 넘겨서 [[초기화]]
 		int tmp = 0; //int형 타입으로 tmp라는 변수 선언 후 0으로 초기화
 	
