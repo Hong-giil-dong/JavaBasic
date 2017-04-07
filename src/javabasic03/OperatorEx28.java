@@ -20,3 +20,4 @@ class OperatorEx28 {
 		return tmp.substring(tmp.length()-32);
 	}
 }
+//
