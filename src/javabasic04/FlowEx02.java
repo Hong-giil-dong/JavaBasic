@@ -7,6 +7,14 @@ class FlowEx02 {
 
 		System.out.print("숫자를 하나 입력하세요.>");
 
+		/* 
+		 * import java.util.*; //임포트 선언
+		 * Scanner scanner = new Scanner(System.in); //스캐너 사용 선언
+		 * String tmp = scanner.nextLine(); //입력받은 문자를 tmp에 저장
+		 * input = Integer.parseInt(tmp); // tmp에 저장된 문자를 숫자로 변환
+		 * 
+		 */
+		
 		Scanner scanner = new Scanner(System.in);
 		String tmp = scanner.nextLine(); // 화면을 통해 입력받은 내용을 tmp에 저장
 		input = Integer.parseInt(tmp);   // 입력받은 문자열(tmp)을 숫자로 변환
@@ -15,8 +23,9 @@ class FlowEx02 {
 			System.out.println("입력하신 숫자는 0입니다.");	
 		}
 
-		if(input!=0)
-			System.out.println("입력하신 숫자는 0이 아닙니다.");		
+		if(input!=0){
+		//	System.out.println("입력하신 숫자는 0이 아닙니다.");
 			System.out.println("입력하신 숫자는 "+ input +"입니다.");
+		}
 	} // main의 끝
 }
