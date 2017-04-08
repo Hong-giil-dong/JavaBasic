@@ -9,3 +9,4 @@ class OperatorEx21 {
 		System.out.printf("'A'+1 != 'B' \t %b%n", 'A'+1 != 'B');
 	}
 }
+//110p ÂüÁ¶

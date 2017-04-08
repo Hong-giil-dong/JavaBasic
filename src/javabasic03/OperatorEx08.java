@@ -8,6 +8,6 @@ class OperatorEx08 {
 		long c = (long)a * (long)b; //위에 선언된 int값을 명시적으로 long형으로 형변환 시키고 계산하므로 100만 곱하기 200만을
 									//곱한 만큼 정확한 계산 결과가 나오게 된다.
 		
-		System.out.println(c);
-	}
-}
+		System.out.println(c); //System메서드에 포함된 out에 포함된 println메서드에 long형 변수 c를 출력하라
+	} //메인메서드 종료
+} //OperatorEx08 클래스 종료
