@@ -7,14 +7,15 @@ class FlowEx05 {
 		char grade = ' ';
 		char opt   = '0';
 
-		System.out.print("점수를 입력해주세요.>");
+		System.out.println("점수를 입력하세요.");
 
-		Scanner scanner = new Scanner(System.in);
-		String tmp = scanner.nextLine(); // 화면을 통해 입력받은 내용을 tmp에 저장
+		Scanner sc = new Scanner(System.in);
+		String tmp = sc.nextLine(); // 화면을 통해 입력받은 내용을 tmp에 저장
 		score = Integer.parseInt(tmp);   // 입력받은 문자열(tmp)을 숫자로 변환
 		
-		System.out.printf("당신의 점수는 %d입니다.", score);
-
+		//System.out.printf("당신의 점수는 %d입니다.", score);
+		System.out.println("당신의 점수는 "+score+"입니다.");
+		
 		if (score >= 90) {		      // score가 90점 보다 같거나 크면 A학점(grade)
 			grade = 'A';
 			if (score >= 98) { 	      // 90점 이상 중에서도 98점 이상은 A+
