@@ -1,5 +1,5 @@
 package javabasic04;
-import java.util.*;
+import java.util.Scanner;
 
 class FlowEx34 {
 	public static void main(String[] args) { 
@@ -25,6 +25,22 @@ class FlowEx34 {
 				System.out.println("메뉴를 잘못 선택하셨습니다.(종료는 0)");
 				continue;		
 			}
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 
 			for(;;) {
 		    System.out.print("계산할 값을 입력하세요.(계산 종료:0, 전체 종료:99)>");

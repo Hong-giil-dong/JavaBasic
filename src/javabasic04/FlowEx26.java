@@ -9,3 +9,5 @@ class FlowEx26 {
 		}
 	} // main¿« ≥°
 }
+//sum += i
+//sum = sum + i
