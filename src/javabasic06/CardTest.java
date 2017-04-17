@@ -21,6 +21,8 @@ class CardTest{
 
 		System.out.println("c1은 " + c1.kind + ", " + c1.number + "이며, 크기는 (" + c1.width + ", " + c1.height + ")" );
 		System.out.println("c2는 " + c2.kind + ", " + c2.number + "이며, 크기는 (" + c2.width + ", " + c2.height + ")" );
+		Card.width = 400;
+		
 	}
  }
 
