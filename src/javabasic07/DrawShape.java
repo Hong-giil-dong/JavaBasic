@@ -1,18 +1,4 @@
 package javabasic07;
-class DrawShape {
-	public static void main(String[] args) {
-		Point[] p = {   new Point(100, 100),
-                        new Point(140,  50),
-                        new Point(200, 100)
-					};
-
-		Triangle t = new Triangle(p);
-		Circle   c = new Circle(new Point(150, 150), 50);
-
-		t.draw(); // »ï°¢ÇüÀ» ±×¸°´Ù.
-		c.draw(); // ¿øÀ» ±×¸°´Ù.
-	}
-}
 
 class Shape {
 	String color = "black";
@@ -35,16 +21,16 @@ class Point {
 	}
 
 	String getXY() {  
-		return "("+x+","+y+")"; // x¿Í yÀÇ °ªÀ» ¹®ÀÚ¿­·Î ¹ÝÈ¯
+		return "("+x+","+y+")"; // xï¿½ï¿½ yï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	}
 }
 
 class Circle extends Shape {
-	Point center;	// ¿øÀÇ ¿øÁ¡ÁÂÇ¥
-	int r;			// ¹ÝÁö¸§
+	Point center;	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¥
+	int r;			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 	Circle() {		
-		this(new Point(0, 0), 100); // Circle(Point center, int r)¸¦ È£Ãâ
+		this(new Point(0, 0), 100); // Circle(Point center, int r)ï¿½ï¿½ È£ï¿½ï¿½
 	}
 
 	Circle(Point center, int r) {
@@ -52,7 +38,7 @@ class Circle extends Shape {
 		this.r = r;
 	}
 
-	void draw() { // ¿øÀ» ±×¸®´Â ´ë½Å¿¡ ¿øÀÇ Á¤º¸¸¦ Ãâ·ÂÇÏµµ·Ï Çß´Ù.
+	void draw() { // ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½Å¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ïµï¿½ï¿½ï¿½ ï¿½ß´ï¿½.
 		System.out.printf("[center=(%d, %d), r=%d, color=%s]%n", center.x, center.y, r, color);
 	}
 }
@@ -66,5 +52,20 @@ class Triangle extends Shape {
 
 	void draw() { 
 		System.out.printf("[p1=%s, p2=%s, p3=%s, color=%s]%n", p[0].getXY(), p[1].getXY(), p[2].getXY(), color);
+	}
+}
+
+class DrawShape {
+	public static void main(String[] args) {
+		Point[] p = {   new Point(100, 100),
+                        new Point(140,  50),
+                        new Point(200, 100)
+					};
+
+		Triangle t = new Triangle(p);
+		Circle   c = new Circle(new Point(150, 150), 50);
+
+		t.draw(); // ï¿½ï°¢ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½.
+		c.draw(); // ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½.
 	}
 }
